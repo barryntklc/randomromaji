@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="author" href="humans.txt" />
+<script src="romaji.js" type="text/javascript"></script>
+<title>Random Romaji</title>
+</head>
+
+<body onload="checkCookie()">
+<!--<div id="message">
+Random Romaji is still under development, so some elements of the webapp may not work properly.
+If you find something (or have suggestions) let me know at <a href="mailto:barryn.chun@gmail.com">barryn.chun@gmail.com</a> and I will fix these errors as soon as possible. For now, I hope this webapp and its current features are of use to you. Enjoy!
+</div>-->
+<div id="container">
+<div id="window">
+Random Romaji
+<!--<form action="">-->
+  <table>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="all" value="all" onclick="checkAll(this)">all</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="alla-o" value="alla-o" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="a-o" value="a" onclick="checkAllBox(this)">
+        a</td>
+      <td><input class="romajicheckbox" type="checkbox" name="a-o" value="i" onclick="checkAllBox(this)">
+        i</td>
+      <td><input class="romajicheckbox" type="checkbox" name="a-o" value="u" onclick="checkAllBox(this)">
+        u</td>
+      <td><input class="romajicheckbox" type="checkbox" name="a-o" value="e" onclick="checkAllBox(this)">
+        e</td>
+      <td><input class="romajicheckbox" type="checkbox" name="a-o" value="o" onclick="checkAllBox(this)">
+        o</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allka-ko" value="allka-ko" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ka-ko" value="ka" onclick="checkAllBox(this)">
+        ka</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ka-ko" value="ki" onclick="checkAllBox(this)">
+        ki</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ka-ko" value="ku" onclick="checkAllBox(this)">
+        ku</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ka-ko" value="ke" onclick="checkAllBox(this)">
+        ke</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ka-ko" value="ko" onclick="checkAllBox(this)">
+        ko</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allsa-so" value="allsa-so" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="sa-so" value="sa" onclick="checkAllBox(this)">
+        sa</td>
+      <td><input class="romajicheckbox" type="checkbox" name="sa-so" value="shi" onclick="checkAllBox(this)">
+        shi</td>
+      <td><input class="romajicheckbox" type="checkbox" name="sa-so" value="su" onclick="checkAllBox(this)">
+        su</td>
+      <td><input class="romajicheckbox" type="checkbox" name="sa-so" value="se" onclick="checkAllBox(this)">
+        se</td>
+      <td><input class="romajicheckbox" type="checkbox" name="sa-so" value="so" onclick="checkAllBox(this)">
+        so</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allta-to" value="allta-to" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ta-to" value="ta" onclick="checkAllBox(this)">
+        ta</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ta-to" value="chi" onclick="checkAllBox(this)">
+        chi</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ta-to" value="tsu" onclick="checkAllBox(this)">
+        tsu</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ta-to" value="te" onclick="checkAllBox(this)">
+        te</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ta-to" value="to" onclick="checkAllBox(this)">
+        to</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allna-no" value="allna-no" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="na-no" value="na" onclick="checkAllBox(this)">
+        na</td>
+      <td><input class="romajicheckbox" type="checkbox" name="na-no" value="ni" onclick="checkAllBox(this)">
+        ni</td>
+      <td><input class="romajicheckbox" type="checkbox" name="na-no" value="nu" onclick="checkAllBox(this)">
+        nu</td>
+      <td><input class="romajicheckbox" type="checkbox" name="na-no" value="ne" onclick="checkAllBox(this)">
+        ne</td>
+      <td><input class="romajicheckbox" type="checkbox" name="na-no" value="no" onclick="checkAllBox(this)">
+        no</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allha-ho" value="allha-ho" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ha-ho" value="ha" onclick="checkAllBox(this)">
+        ha</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ha-ho" value="hi" onclick="checkAllBox(this)">
+        hi</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ha-ho" value="fhu" onclick="checkAllBox(this)">
+        fhu</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ha-ho" value="he" onclick="checkAllBox(this)">
+        he</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ha-ho" value="ho" onclick="checkAllBox(this)">
+        ho</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allma-mo" value="allma-mo" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ma-mo" value="ma" onclick="checkAllBox(this)">
+        ma</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ma-mo" value="mi" onclick="checkAllBox(this)">
+        mi</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ma-mo" value="mu" onclick="checkAllBox(this)">
+        mu</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ma-mo" value="me" onclick="checkAllBox(this)">
+        me</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ma-mo" value="mo" onclick="checkAllBox(this)">
+        mo</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allya-yo" value="allya-yo" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ya-yo" value="ya" onclick="checkAllBox(this)">
+        ya</td>
+      <td></td>
+      <td><input class="romajicheckbox" type="checkbox" name="ya-yo" value="yu" onclick="checkAllBox(this)">
+        yu</td>
+      <td></td>
+      <td><input class="romajicheckbox" type="checkbox" name="ya-yo" value="yo" onclick="checkAllBox(this)">
+        yo</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allra-ro" value="allra-ro" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ra-ro" value="ra" onclick="checkAllBox(this)">
+        ra</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ra-ro" value="ri" onclick="checkAllBox(this)">
+        ri</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ra-ro" value="ru" onclick="checkAllBox(this)">
+        ru</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ra-ro" value="re" onclick="checkAllBox(this)">
+        re</td>
+      <td><input class="romajicheckbox" type="checkbox" name="ra-ro" value="ro" onclick="checkAllBox(this)">
+        ro</td>
+    </tr>
+    <tr>
+      <td><input class="romajicheckbox" type="checkbox" name="allwa-n" value="allwa-n" onclick="checkRow(this)">
+        &nbsp;</td>
+      <td><input class="romajicheckbox" type="checkbox" name="wa-n" value="wa" onclick="checkAllBox(this)">
+        wa</td>
+      <td></td>
+      <td><input class="romajicheckbox" type="checkbox" name="wa-n" value="wo" onclick="checkAllBox(this)">
+        wo</td>
+      <td></td>
+      <td><input class="romajicheckbox" type="checkbox" name="wa-n" value="n" onclick="checkAllBox(this)">
+        n</td>
+    </tr>
+  </table>
+  
+  Generate how many romaji?<br>
+  <input type="number" id="number01" value="0">
+  <br>
+  <input id="dakuten" type="checkbox" name="dakuten" value="dakuten" onclick="checkDakuten()">
+  <!--<strike style="color:red;">-->Include dakuten<!--</strike>--><br>
+  <!--<input type="submit" value="Submit" onclick="generate()" onsubmit="return validate()">-->
+  
+  <button type="button" onclick="generate()">Submit</button>
+  <br>
+  <br>
+  
+  <div style="font-size: 11px; text-align: left;">This webapp makes use of Javascript, and may not work if you <br> have it deactivated.</div>
+<!--</form>-->
+</div>
+</div>
+</body>
+</html>

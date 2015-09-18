@@ -1,3 +1,5 @@
+/*check out http://stackoverflow.com/questions/8865458/how-to-align-text-vertically-center-in-div-with-css*/
+
 tr {
 	background-color:#C3E0FF;
 }
@@ -17,6 +19,63 @@ body {
 	background-color: black;
 }
 
+.divspacer00 {
+	margin: 3px 5px;
+
+	display: inline-block;
+
+	height: 40px;
+	width: 60px;
+}
+
+.divspacer01 {
+	margin: 3px 5px;
+
+	display: inline-block;
+
+	height: 40px;
+	width: 10px;
+}
+
+.divbutton00 {
+	margin: 3px 5px;
+
+	display: inline-block;
+
+	height: 40px;
+	width: 25px;
+
+	background-color: #d9d9d9;
+}
+
+.divbutton00:hover {
+	background-color: dodgerblue;
+}
+
+.divbutton01 {
+	margin: 3px 5px;
+
+	display: inline-block;
+
+	height: 40px;
+	width: 60px;
+
+	background-color: #d9d9d9;
+}
+
+.divbutton01:hover {
+	background-color: dodgerblue;
+}
+
+.divbutton00, .divbutton01 {
+	font-weight: bold;
+	color: #3a3a3a;
+}
+
+.divbutton00:hover, .divbutton01:hover {
+	color: #d9d9d9;
+}
+
 #container {
 	//display: inline-flex;
 	width: 100%;
@@ -34,6 +93,8 @@ body {
 	font-size: 11px;
 	
 	background-color:#EBEBEB;
+
+	border: 1px solid black;
 }
 
 #window {

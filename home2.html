@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Developing a more dynamic UI for RandomRomaji-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="author" href="humans.txt"/>
+    <script src="romaji.js" type="text/javascript"></script>
+    <script src="appearance.js"></script>
+    <title>Random Romaji</title>
+</head>
+
+<body onload="checkCookie()">
+<!--<div id="message">
+Random Romaji is still under development, so some elements of the webapp may not work properly.
+If you find something (or have suggestions) let me know at <a href="mailto:barryn.chun@gmail.com">barryn.chun@gmail.com</a> and I will fix these errors as soon as possible. For now, I hope this webapp and its current features are of use to you. Enjoy!
+</div>-->
+<div id="container">
+    <div id="window">
+        Random Romaji
+        <!--<form action="">-->
+
+        <br>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divspacer00">&nbsp;</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">a</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">i</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">u</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">e</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">o</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ka</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ki</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ku</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ke</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ko</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">sa</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">shi</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">su</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">se</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">so</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ta</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">chi</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">tsu</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">te</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">to</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">na</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ni</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">nu</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ne</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">no</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ha</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">hi</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">fhu</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">he</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ho</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ma</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">mi</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">mu</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">me</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">mo</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ya</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">yu</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">yo</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ra</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ri</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ru</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">re</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">ro</div>
+        <br>
+
+        <div class="divbutton00" onmousedown="depress(this)" onmouseup="release(this)">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">wa</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">wo</div>
+        <div class="divspacer00">&nbsp;</div>
+        <div class="divbutton01" onmousedown="depress(this)" onmouseup="release(this)">n</div>
+        <br>
+        <br>
+
+        Generate how many romaji?<br>
+        <input type="number" id="number01" value="0">
+        <br>
+        <input id="dakuten" type="checkbox" name="dakuten" value="dakuten" onclick="checkDakuten()">
+        <!--<strike style="color:red;">-->Include dakuten<!--</strike>--><br>
+        <!--<input type="submit" value="Submit" onclick="generate()" onsubmit="return validate()">-->
+
+        <button type="button" onclick="generate()">Submit</button>
+        <br>
+        <br>
+
+        <div style="font-size: 11px; text-align: left;">This webapp makes use of Javascript, and may not work if you
+            <br> have it deactivated.
+        </div>
+        <!--</form>-->
+    </div>
+</div>
+</body>
+</html>

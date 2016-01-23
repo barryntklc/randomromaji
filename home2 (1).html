@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="author" href="humans.txt" />
+<script src="romaji.js" type="text/javascript"></script>
+<title>Random Romaji</title>
+</head>
+
+<body onload="checkCookie()">
+<!--<div id="message">
+Random Romaji is still under development, so some elements of the webapp may not work properly.
+If you find something (or have suggestions) let me know at <a href="mailto:barryn.chun@gmail.com">barryn.chun@gmail.com</a> and I will fix these errors as soon as possible. For now, I hope this webapp and its current features are of use to you. Enjoy!
+</div>-->
+<div id="container">
+<div id="window">
+Random Romaji
+<!--<form action="">-->
+
+  <br>
+  <br>
+  <br>
+  <div class="divbutton00">&nbsp;</div>
+  <div class="divspacer01">&nbsp;</div>
+  <div class="divbutton01">a</div>
+  <div class="divbutton01">i</div>
+  <div class="divbutton01">u</div>
+  <div class="divbutton01">e</div>
+  <div class="divbutton01">o</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">ka</div>
+  <div class="divbutton01">ki</div>
+  <div class="divbutton01">ku</div>
+  <div class="divbutton01">ke</div>
+  <div class="divbutton01">ko</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">sa</div>
+  <div class="divbutton01">shi</div>
+  <div class="divbutton01">su</div>
+  <div class="divbutton01">se</div>
+  <div class="divbutton01">so</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">ta</div>
+  <div class="divbutton01">chi</div>
+  <div class="divbutton01">tsu</div>
+  <div class="divbutton01">te</div>
+  <div class="divbutton01">to</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">na</div>
+  <div class="divbutton01">ni</div>
+  <div class="divbutton01">nu</div>
+  <div class="divbutton01">ne</div>
+  <div class="divbutton01">no</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">ha</div>
+  <div class="divbutton01">hi</div>
+  <div class="divbutton01">fhu</div>
+  <div class="divbutton01">he</div>
+  <div class="divbutton01">ho</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">ma</div>
+  <div class="divbutton01">mi</div>
+  <div class="divbutton01">mu</div>
+  <div class="divbutton01">me</div>
+  <div class="divbutton01">mo</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">ya</div>
+  <div class="divbutton01"></div>
+  <div class="divbutton01">yu</div>
+  <div class="divbutton01"></div>
+  <div class="divbutton01">yo</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">ra</div>
+  <div class="divbutton01">ri</div>
+  <div class="divbutton01">ru</div>
+  <div class="divbutton01">re</div>
+  <div class="divbutton01">ro</div>
+  <br>
+  <div class="divbutton00"></div>
+  <div class="divspacer01"></div>
+  <div class="divbutton01">wa</div>
+  <div class="divbutton01"></div>
+  <div class="divbutton01">wo</div>
+  <div class="divbutton01"></div>
+  <div class="divbutton01">n</div>
+  <br>
+  <br>
+  
+  Generate how many romaji?<br>
+  <input type="number" id="number01" value="0">
+  <br>
+  <input id="dakuten" type="checkbox" name="dakuten" value="dakuten" onclick="checkDakuten()">
+  <!--<strike style="color:red;">-->Include dakuten<!--</strike>--><br>
+  <!--<input type="submit" value="Submit" onclick="generate()" onsubmit="return validate()">-->
+  
+  <button type="button" onclick="generate()">Submit</button>
+  <br>
+  <br>
+  
+  <div style="font-size: 11px; text-align: left;">This webapp makes use of Javascript, and may not work if you <br> have it deactivated.</div>
+<!--</form>-->
+</div>
+</div>
+</body>
+</html>
